@@ -11,7 +11,9 @@ function getLength(input){
 }
 console.log(getLength([1, [2, 3]]));
 
-
+function getLength3(input){
+    console.log(input.flat(Infinity).length)
+}
 
 
 function getLength2(input){
@@ -27,3 +29,5 @@ function getLength2(input){
     return count;
 }
 console.log(getLength2([1, [2, [3, [4, [5, 6]]]]]));
+
+getLength3([1, [2, [3, [4, [5, 6]]]]]);
